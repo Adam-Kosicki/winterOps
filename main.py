@@ -81,7 +81,7 @@ def create_map(gps_data, closest_status_records):
             popup_message += f"GPS DateTime: {gps_record['dateTime']}<br>"
 
             # Determine line color based on status
-            if status_record.get('id_DiagnosticAux4Id', False):
+            if status_record.get('xid_DiagnosticAux4Id', False):
                 line_color = "green"  # Set to green if id_DiagnosticAux4Id is true
             elif status_record.get('id_DiagnosticAux3Id', False):
                 line_color = "blue"  # Set to blue if id_DiagnosticAux3Id is true
